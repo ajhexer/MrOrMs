@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+}
+/* this is for all of page */
+body{
+    background: url(../images/_64d3ce2d-a4cb-4d04-ba28-36d31f4c6cf7.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+/* this is for content container, actually main box */
+.page-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5% 3%;
+    border-radius: 25px;
+    display: flex;
+    gap: 2rem;
+    background: linear-gradient(90deg, rgba(117, 243, 247, 0.6) 0%, rgba(117, 243, 247, 0.6) 100%);
+}
+/* this is for tittles such as prediction and mr or ms and saved answer */
+.tittle{
+    font-size: 1.4rem;
+    display: #3333;
+    font-weight: bold;
+}
+/* this is for each three parts without their tittles */
+.user-info{
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+}
+/* this if for saved and prediction part */
+#prediction-saved{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/* this is for three sections that we have such as saved and prediction and user info */
+#details, #prediction, #saved{
+    gap: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+/* this is for prediction section*/
+#prediction{
+    display: none;
+}
+/* this is for saved section*/
+#saved{
+    display: none;
+    border: 1px dashed;
+    padding: 12px;
+    width: max-content;
+}
+/* this is for save and submit buttons group */
+.actions{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+/* this is  for name and label*/
+.name-container {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+/* this is for all of the buttons in page */
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 0.3rem 0.7rem;
+    width: fit-content;
+    background: rgba(73, 255, 109, 0.35);
+    font-size: 0.84rem;
+    cursor: pointer;
+}
+/* this is for all of the inputs with text type in page */
+input[type="text"] {
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.3rem;
+    outline: none;
+    width: 4rem;
+}
+/* this is for snackbar container to locate in is center */
+.snackbar-container{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: 10px;
+}
+/* this is for snackbar after showing and it`s animation */
+#snackbar {
+    visibility: hidden;
+    background: #47c5ff;
+    padding: 24px;
+    text-align: center;
+    width: fit-content;
+    font-size: 17px;
+    border-radius: 6px;
+    color: wheat;
+    opacity: 0.5;
+    transition: opacity 0.5s linear;
+}
+/* this is for snackbar before showing */
+#snackbar.show {
+    visibility: visible;
+    opacity: 1;
+}
